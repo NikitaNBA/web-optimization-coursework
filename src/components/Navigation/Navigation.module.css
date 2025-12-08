@@ -1,0 +1,56 @@
+.nav {
+  background: #34495e;
+}
+
+.navList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  color: white;
+  padding: 1rem 1.5rem;
+  display: block;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navLink.active {
+  background: #66ada5;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  
+  .nav.active {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #233140;
+    z-index: 100;
+  }
+  
+  .navList {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .navItem {
+    width: 100%;
+    text-align: center;
+  }
+}

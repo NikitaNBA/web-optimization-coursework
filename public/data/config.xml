@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <item href="/">Главная</item>
+    <item href="/loading">Загрузка</item>
+    <item href="/caching">Кэширование</item>
+    <item href="/server">Сеть и сервер</item>
+    <item href="/render">Рендеринг</item>
+    <item href="/delay">Задержка</item>
+</menu>

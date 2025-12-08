@@ -1,0 +1,201 @@
+.main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Секция с описанием */
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.introContent {
+  padding: 1rem;
+}
+
+.introTitle {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.introText {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.btnPrimary {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #66ada5;
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btnPrimary:hover {
+  background: #3a8781;
+  color: white;
+}
+
+.introImage {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.responsiveImg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Методы описания */
+.descriptionMethods {
+  margin-bottom: 3rem;
+}
+
+.descriptionContent {
+  padding: 1rem;
+}
+
+.descriptionTitle {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.descriptionText {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Карточки с общей информацией */
+.features {
+  margin-bottom: 3rem;
+}
+
+.featuresTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.featureCard {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.featureCardIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.featureCardTitle {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+}
+
+.featureCardText {
+  color: #95a5a6;
+}
+
+/* Сетка методов */
+.methodsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.methodCard {
+  background: #ecf0f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.methodCard:hover {
+  background: #66ada5;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.methodCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: inherit;
+}
+
+.methodCard p {
+  color: inherit;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.methodCard a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.methodCard img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0.5rem;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  
+  .methodsGrid,
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .introTitle,
+  .descriptionTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .featureCard {
+    padding: 1rem;
+  }
+  
+  .methodCard {
+    padding: 1rem;
+  }
+}
