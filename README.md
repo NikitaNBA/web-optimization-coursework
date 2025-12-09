@@ -16,6 +16,7 @@
 ```bash
 npm install
 npm run dev
+```
 
 ## Структура проекта
 ├── src/
